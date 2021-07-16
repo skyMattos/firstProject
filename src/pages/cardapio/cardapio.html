@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cardapio.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="div-header">
+            <span><a href="../home/home.html" class="material-icons btn btn-home">home</a></span>
+            <span><a href="#" class="btn current btn-carte">Cardápio</a></span>
+        </div>
+
+
+        <div class="add-header">
+            <h2>Opções de lanches</h2>
+            <button class="addBtn">ADICIONAR</button>
+        </div>
+    </div>
+        <div id="myModal" class="modal">
+            
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                    <form id="modal-form">
+                        <span class="text-center">Cadastrar comida</span>
+                        <span class="form-input">
+                            <label for="food-name">Comida:</label>
+                            <input type="text" name="food-name" id="food-name">
+                        </span>
+                        <span class="form-input">
+                            <label for="price-tag">Preço:</label>
+                            <input type="number" name="price-tag" id="price-tag" placeholder="0,00" min="0" max="100000" step="0.01">
+                        </span>
+                        <span class="form-input">
+                            <label for="item-description">Descrição da comida:</label>
+                            <textarea name="item-description" id="item-description" cols="30" rows="10" placeholder="Insira a descrição da sua comida"></textarea>
+                        </span>
+                        <span class="button-span">
+                            <button type="button" class="btn-submit btn">Salvar</button>
+                            <button type="button" class="btn-delete btn">Deletar</button>
+                        </span>
+                        <input type="text" id="food-id">
+                    </form>
+            </div>
+        </div>
+
+        <div class="carte-list">
+
+        </div>
+
+
+<script src="cardapio.js" type="module"></script>
+</body>
+</html>
