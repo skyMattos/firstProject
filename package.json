@@ -2,7 +2,7 @@
   "name": "src",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "cardapio.js",
   "dependencies": {
     "json-server": "^0.16.3"
   },
